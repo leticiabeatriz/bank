@@ -1,12 +1,16 @@
 
 public abstract class Conta {
-
+	protected double saldo;
 	
-	public void sacar(double valor) {}
-	public void depositar(double valor) {}
-	public void transferir(double valor, Conta conta) {}
+	public Conta(double saldo){
+		this.saldo=saldo;
+	}
 	
-	protected abstract double getSaldo();
-	protected abstract double setSaldo(double valor);
+	public double verificarSaldo(){
+		return saldo;
+	}
+	
+	public abstract void sacar(double valor);
+	
 	protected abstract void gerarTaxa();
 }
