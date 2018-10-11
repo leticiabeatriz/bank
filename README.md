@@ -13,3 +13,20 @@ Então, após a discussão com os **envolvidos/interessados**, a seguinte formul
  * Existem diferentes tipos de transações (Transferencia, Saque, Deposito, Pagamento).
  * Transações em moeda estrangeira são não permitidas.
 
+## Iteração - 2
+
+Depois de sentar com os **envolvidos/interessados** e extrair conceitos preliminares sobre o funcionamento do que estava desejando, tivemos um encontro para compreender melhor os conceitos que foram expostos. Para assim, delimitarmos o nosso primeiro esboço funcional do projeto. Desta forma, o rascunho inicial do projeto se apresentou da seguinte forma: 
+
+* __Funcionalidades do Gerente__ 
+  * Registrar um novo cliente para o banco; 
+  * Criar uma conta (Poupança ou Corrente);
+  * Associar uma conta recém criada para um cliente específico;
+  * _Programar a periocidade das cobranças automáticas das taxas_;
+  * Resumir as informações (quantidade de clientes, contas correntes e poupanças ) para serem apresentas em uma única tela;
+  * Além da poupança, permitir que o gerente crie investimentos para serem apresentados na área do cliente.
+  
+* __Funcionalidades do Cliente__ 
+  * Visualizar todas as suas contas;
+  * Definir a conta na qual deseja trabalhar;
+  * Permitir, uma vez a conta esteja selecionada, possa Depositar, Sacar, Transferir, Realizar Pagamento, Verificar Saldo, Investir nas oportunidades oferecidas pelo banco;
+  * Verificar o Extrato das operações realizadas. 
