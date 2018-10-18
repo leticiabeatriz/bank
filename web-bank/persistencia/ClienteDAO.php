@@ -6,7 +6,7 @@ require_once("../../negocio/dominio/Cliente.php");
 class ClienteDAO extends DBMySQL {
 
 	public function inserir($cliente){	
-		$this->query("INSERT INTO cliente (nome,cpf) VALUES ('".$cliente->nome."','".$cliente->cpf."');" );
+		$this->query("INSERT INTO clientes (nome,cpf) VALUES ('".$cliente->nome."','".$cliente->cpf."');" );
 	}
 	
 	public function selecionarTodos(){

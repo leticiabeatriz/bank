@@ -3,23 +3,22 @@
 <?php
 
 class DBMySQL {
-	
-	protected static $connection;
+	protected static $connection;	
 	
 	public function connect(){
 	
-		if(!isset($this->connection)){
+		if(!isset(self::$connection)){
 		
 			$hostname = "localhost:3306";	
 			$username = "root";
 			$password = "";
 			$database = "web_bank";
 			
-			$this->connection = mysqli_connect($hostname, $username, $password, $database);
+			self::$connection = mysqli_connect($hostname, $username, $password, $database);
 			
 		}
 		
-		if($this->connection === false){
+		if(self::$connection === false){
 			return false;
 		}
 		
@@ -54,7 +53,7 @@ class DBMySQL {
 	}
 	
 	public function printError(){
-		echo "Error" . $connection->error;
+		echo "Error" . self::$connection->error;
 	}
 }
 
