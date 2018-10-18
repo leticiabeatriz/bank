@@ -5,8 +5,8 @@ public class Agencia {
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
 		int op = -1;
-		Conta conta=null;
-		
+		Conta conta = null;
+
 		do {
 			System.out.println("Informe a opção: ");
 			System.out.println("0= Sair");
@@ -22,32 +22,32 @@ public class Agencia {
 				break;
 			case 1:
 				System.out.println("Informe o valor do saldo: ");
-				double saldo=leitor.nextDouble();
-				
+				double saldo = leitor.nextDouble();
+
 				System.out.println("Informe o limite: ");
-				double limite=leitor.nextDouble();
-				
+				double limite = leitor.nextDouble();
+
 				System.out.println("Informe o tipo de servico( 1= Minimo 2= Máximo): ");
-				int servico=leitor.nextInt();
-				
-				conta=new ContaCorrente(saldo,limite,servico);
-				
+				int servico = leitor.nextInt();
+
+				conta = new ContaCorrente(saldo, limite, servico);
+
 				break;
 			case 2:
 				System.out.println("Informe o valor do saque: ");
-				double saque=leitor.nextDouble();
-				
+				double saque = leitor.nextDouble();
+
 				conta.sacar(saque);
-				
+
 				break;
 			case 3:
 				conta.gerarTaxa();
-				
+
 				break;
 			default:
 				System.out.println("Opção inválida!");
 			}
-			System.out.println("Saldo atual: "+conta.verificarSaldo());
+			System.out.println("Saldo atual: " + conta.verificarSaldo());
 		} while (op != 0);
 	}
 }
