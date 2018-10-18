@@ -10,7 +10,7 @@ class ClienteDAO extends DBMySQL {
 	}
 	
 	public function selecionarTodos(){
-		return $this->select("SELECT cod_cliente, nome, cpf FROM cliente;");
+		return $this->select("SELECT cod_cliente, nome, cpf FROM clientes;");
 	}
 
 }

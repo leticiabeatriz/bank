@@ -22,7 +22,7 @@ class DBMySQL {
 			return false;
 		}
 		
-		return $this->connection;
+		return self::$connection;
 	}
 	
 	public function query($query){
